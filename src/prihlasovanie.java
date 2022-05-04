@@ -35,6 +35,9 @@ public class prihlasovanie extends javax.swing.JFrame {
         jTextmeno = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButtonucitel = new javax.swing.JButton();
+        jTextField2 = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
 
         popupMenu1.setLabel("popupMenu1");
 
@@ -52,40 +55,86 @@ public class prihlasovanie extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setAlwaysOnTop(true);
+        setBackground(new java.awt.Color(204, 0, 204));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 410, 110, -1));
+        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 250, 110, -1));
 
+        jTextField1.setBackground(new java.awt.Color(204, 0, 204));
         jTextField1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 18)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(255, 0, 51));
         jTextField1.setText("heslo:");
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 410, 60, -1));
+        jTextField1.setBorder(null);
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, 90, -1));
 
+        meno.setBackground(new java.awt.Color(204, 0, 204));
         meno.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 18)); // NOI18N
-        meno.setForeground(new java.awt.Color(255, 51, 51));
         meno.setText("meno");
+        meno.setBorder(null);
         meno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menoActionPerformed(evt);
             }
         });
-        getContentPane().add(meno, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 370, 60, -1));
-        getContentPane().add(jTextmeno, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 370, 110, -1));
+        getContentPane().add(meno, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 210, 90, -1));
+        getContentPane().add(jTextmeno, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 210, 110, -1));
 
+        jButton1.setBackground(new java.awt.Color(204, 0, 204));
         jButton1.setText("prihlasiť");
+        jButton1.setAutoscrolls(true);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 390, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 230, -1, -1));
 
+        jButtonucitel.setBackground(new java.awt.Color(204, 0, 204));
         jButtonucitel.setText("ucitel");
         jButtonucitel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonucitelActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonucitel, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 490, -1, -1));
+        getContentPane().add(jButtonucitel, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 330, -1, -1));
+
+        jTextField2.setBackground(new java.awt.Color(204, 0, 204));
+        jTextField2.setFont(new java.awt.Font("Yu Gothic Medium", 1, 14)); // NOI18N
+        jTextField2.setText("system na spravu rocnikovych projektov");
+        jTextField2.setBorder(null);
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 120, -1, 30));
+
+        jPanel2.setBackground(new java.awt.Color(204, 0, 204));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 659, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 330, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(82, 82, 82)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 760, 330));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -120,8 +169,8 @@ public class prihlasovanie extends javax.swing.JFrame {
             jPasswordField1.setText(null); //vymaže text v poli heslo
    jTextmeno.setText(null); //vymaže text v poli meno
 
-          ucitel  ucitel  = new  ucitel (); // Zadefinuje Jframe(Domov)
-             ucitel .show(); // Zobrazí Jframe(Domov)
+          ucitel2  ucitel2  = new  ucitel2 (); // Zadefinuje Jframe(Domov)
+             ucitel2 .show(); // Zobrazí Jframe(Domov)
             dispose(); // Zatvoí povodný Jframe
         }
         else
@@ -169,8 +218,11 @@ public class prihlasovanie extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButtonucitel;
     private javax.swing.JDialog jDialog1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextmeno;
     private javax.swing.JTextField meno;
     private java.awt.PopupMenu popupMenu1;

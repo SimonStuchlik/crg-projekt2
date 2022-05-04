@@ -28,6 +28,9 @@ public class ucitel2 extends javax.swing.JFrame {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        komentar = new javax.swing.JButton();
+        mojekomentare = new javax.swing.JButton();
+        spet = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -36,25 +39,81 @@ public class ucitel2 extends javax.swing.JFrame {
         jTextArea1.setText("ucitel prihlaseny ");
         jScrollPane1.setViewportView(jTextArea1);
 
+        komentar.setText("pridat komentar");
+        komentar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                komentarActionPerformed(evt);
+            }
+        });
+
+        mojekomentare.setText("moje komentare");
+        mojekomentare.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mojekomentareActionPerformed(evt);
+            }
+        });
+
+        spet.setText("spet");
+        spet.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                spetActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(376, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(223, 223, 223))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(mojekomentare, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(30, 30, 30)
+                .addComponent(komentar, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 344, Short.MAX_VALUE)
+                .addComponent(spet, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(93, 93, 93))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(137, 137, 137)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(242, Short.MAX_VALUE))
+                .addGap(14, 14, 14)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(komentar)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(mojekomentare)
+                .addContainerGap(371, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(spet)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void komentarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_komentarActionPerformed
+komentar komentar = new komentar(); // Zadefinuje Jframe(Domov)
+            komentar.show(); // Zobrazí Jframe(Domov)
+            dispose();        // TODO add your handling code here:
+    }//GEN-LAST:event_komentarActionPerformed
+
+    private void mojekomentareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mojekomentareActionPerformed
+        // TODO add your handling code here:
+        mojekomentare mojekomentare = new mojekomentare(); // Zadefinuje Jframe(Domov)
+            mojekomentare.show(); // Zobrazí Jframe(Domov)
+            dispose();
+    }//GEN-LAST:event_mojekomentareActionPerformed
+
+    private void spetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_spetActionPerformed
+        prihlasovanie prihlasovanie = new prihlasovanie(); // Zadefinuje Jframe(Domov)
+            prihlasovanie.show(); // Zobrazí Jframe(Domov)
+            dispose();    // TODO add your handling code here:
+    }//GEN-LAST:event_spetActionPerformed
 
     /**
      * @param args the command line arguments
@@ -94,5 +153,8 @@ public class ucitel2 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JButton komentar;
+    private javax.swing.JButton mojekomentare;
+    private javax.swing.JButton spet;
     // End of variables declaration//GEN-END:variables
 }
