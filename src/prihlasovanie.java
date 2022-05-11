@@ -1,3 +1,5 @@
+
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -15,6 +17,9 @@ public class prihlasovanie extends javax.swing.JFrame {
      */
     public prihlasovanie() {
         initComponents();
+        
+        
+        
     }
 
     /**
@@ -29,15 +34,14 @@ public class prihlasovanie extends javax.swing.JFrame {
         popupMenu1 = new java.awt.PopupMenu();
         popupMenu2 = new java.awt.PopupMenu();
         jDialog1 = new javax.swing.JDialog();
-        jPasswordField1 = new javax.swing.JPasswordField();
-        jTextField1 = new javax.swing.JTextField();
-        meno = new javax.swing.JTextField();
         jTextmeno = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButtonucitel = new javax.swing.JButton();
-        jTextField2 = new javax.swing.JTextField();
-        jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
+        jPasswordField3 = new javax.swing.JPasswordField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         popupMenu1.setLabel("popupMenu1");
 
@@ -59,96 +63,56 @@ public class prihlasovanie extends javax.swing.JFrame {
         setBackground(new java.awt.Color(204, 0, 204));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 250, 110, -1));
+        getContentPane().add(jTextmeno, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 130, 110, 30));
 
-        jTextField1.setBackground(new java.awt.Color(204, 0, 204));
-        jTextField1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 18)); // NOI18N
-        jTextField1.setText("heslo:");
-        jTextField1.setBorder(null);
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, 90, -1));
-
-        meno.setBackground(new java.awt.Color(204, 0, 204));
-        meno.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 18)); // NOI18N
-        meno.setText("meno");
-        meno.setBorder(null);
-        meno.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menoActionPerformed(evt);
-            }
-        });
-        getContentPane().add(meno, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 210, 90, -1));
-        getContentPane().add(jTextmeno, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 210, 110, -1));
-
-        jButton1.setBackground(new java.awt.Color(204, 0, 204));
-        jButton1.setText("prihlasiť");
+        jButton1.setBackground(new java.awt.Color(255, 153, 0));
+        jButton1.setFont(new java.awt.Font("Sitka Banner", 1, 14)); // NOI18N
+        jButton1.setText("prihlasit");
         jButton1.setAutoscrolls(true);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 230, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 150, 120, -1));
 
-        jButtonucitel.setBackground(new java.awt.Color(204, 0, 204));
+        jButtonucitel.setBackground(new java.awt.Color(255, 153, 0));
+        jButtonucitel.setFont(new java.awt.Font("Sitka Banner", 1, 14)); // NOI18N
         jButtonucitel.setText("ucitel");
         jButtonucitel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonucitelActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonucitel, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 330, -1, -1));
+        getContentPane().add(jButtonucitel, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 250, -1, 30));
+        getContentPane().add(jPasswordField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 180, 110, 30));
 
-        jTextField2.setBackground(new java.awt.Color(204, 0, 204));
-        jTextField2.setFont(new java.awt.Font("Yu Gothic Medium", 1, 14)); // NOI18N
-        jTextField2.setText("system na spravu rocnikovych projektov");
-        jTextField2.setBorder(null);
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 120, -1, 30));
+        jLabel2.setFont(new java.awt.Font("Showcard Gothic", 1, 14)); // NOI18N
+        jLabel2.setText("meno");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, 80, 30));
 
-        jPanel2.setBackground(new java.awt.Color(204, 0, 204));
+        jLabel3.setFont(new java.awt.Font("Showcard Gothic", 1, 14)); // NOI18N
+        jLabel3.setText("heslo");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 190, 90, -1));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 659, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 330, Short.MAX_VALUE)
-        );
+        jLabel4.setFont(new java.awt.Font("Showcard Gothic", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 0, 0));
+        jLabel4.setText("system na spravu rocnikovych projektov");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 60, 460, -1));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(82, 82, 82)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 760, 330));
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\simon\\Desktop\\pozadie.jpg")); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-100, -10, 870, 470));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void menoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_menoActionPerformed
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        String heslo = jPasswordField1.getText();  // Zadefinuje premennú heslo a vlozí doň text
+        String heslo = jPasswordField3.getText();  // Zadefinuje premennú heslo a vlozí doň text
         String meno = jTextmeno.getText();  // Zadefinuje premennú meno a vlozí doň text
         if (heslo.contains("1") && meno.contains("1")) //kontroluje zhodnosť mena a hesla
         {
-            jPasswordField1.setText(null); //vymaže text v poli heslo
+            jPasswordField3.setText(null); //vymaže text v poli heslo
    jTextmeno.setText(null); //vymaže text v poli meno
 
             domov domov = new domov(); // Zadefinuje Jframe(Domov)
@@ -162,11 +126,11 @@ public class prihlasovanie extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButtonucitelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonucitelActionPerformed
- String heslo = jPasswordField1.getText();  // Zadefinuje premennú heslo a vlozí doň text
+ String heslo = jPasswordField3.getText();  // Zadefinuje premennú heslo a vlozí doň text
         String meno = jTextmeno.getText();  // Zadefinuje premennú meno a vlozí doň text
         if (heslo.contains("2") && meno.contains("2")) //kontroluje zhodnosť mena a hesla
         {
-            jPasswordField1.setText(null); //vymaže text v poli heslo
+            jPasswordField3.setText(null); //vymaže text v poli heslo
    jTextmeno.setText(null); //vymaže text v poli meno
 
           ucitel2  ucitel2  = new  ucitel2 (); // Zadefinuje Jframe(Domov)
@@ -218,13 +182,12 @@ public class prihlasovanie extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButtonucitel;
     private javax.swing.JDialog jDialog1;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JPasswordField jPasswordField3;
     private javax.swing.JTextField jTextmeno;
-    private javax.swing.JTextField meno;
     private java.awt.PopupMenu popupMenu1;
     private java.awt.PopupMenu popupMenu2;
     // End of variables declaration//GEN-END:variables
